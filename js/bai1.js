@@ -18,7 +18,7 @@ function Sort() {
                 document.getElementById("thuTuTangDan").innerHTML = c +" < " + b + " < " + a
             }
             // Nếu a > b, b < c
-            if(a > c){
+            else if(a > c){
                 // B3: Xuất kết quả ra màn hình
                 console.log(b, c, a);
                 document.getElementById("thuTuTangDan").innerHTML = b +" < " + c + " < " + a
@@ -30,7 +30,7 @@ function Sort() {
                 document.getElementById("thuTuTangDan").innerHTML = b +" < " + a + " < " + c
             }
         }
-        if (b > c) {
+        else if (b > c) {
             if(a > c){
                 // B3: Xuất kết quả ra màn hình
                 console.log(c, a, b);
@@ -51,7 +51,6 @@ function Sort() {
                 document.getElementById("thuTuTangDan").innerHTML = a +" < " + b + " < " + c
             }
         }
-    
         document.getElementById("thuTuTangDan").className = "bg-success card-footer text-white"
     }
     
