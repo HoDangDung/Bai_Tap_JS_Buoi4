@@ -17,7 +17,7 @@
         <!-- Bài 1 -->
         <div class="card">
             <div class="card-header">
-                Viết chương trình xuất 3 số theo thứ tự tăng dần
+                Xuất 3 số theo thứ tự tăng dần
             </div>
             <div class="card-body">
                 <div class="form-group">
@@ -42,7 +42,7 @@
         <!-- Bài 2 -->
         <div class="card">
             <div class="card-header">
-                Viết chương trình "chào hỏi" các thành viên trong gia đình
+                Chương trình "Chào hỏi"
             </div>
             <div class="card-body">
                 <div class="dropdown">
@@ -58,7 +58,7 @@
                 </div>
             </div>
             <div class="card-footer text-muted">
-                Footer
+                Hồ Đăng Dũng
             </div>
         </div>
         <!-- ============= -->
@@ -67,7 +67,7 @@
          <!-- Bài 3 -->
          <div class="card">
             <div class="card-header">
-                Viết chương trình xuất ra có bao nhiêu số lẻ và số chẵn
+                Đếm số chẵn lẻ
             </div>
             <div class="card-body">
                 <div class="form-group">
@@ -92,7 +92,7 @@
          <!-- Bài 4 -->
          <div class="card">
             <div class="card-header">
-                Viết chương nhập 3 cạnh của tam giác, cho biết đó là tam giác gì?
+                Đoán hình tam giác
             </div>
             <div class="card-body">
                 <div class="form-group">
@@ -105,9 +105,31 @@
                     <label for="">Nhập độ dài cạnh 3</label>
                     <input type="number" class="form-control" id="c">
                 </div>
-                <button onclick="DuDoan()" class="btn btn-danger">Dự đoán</button>
+                <button onclick="duDoan()" class="btn btn-danger">Dự đoán</button>
             </div>
             <div id="duDoan" class="card-footer text-muted">
+                Hồ Đăng Dũng
+            </div>
+        </div>
+        <!-- ============= -->
+        <br>
+        <hr><br>
+         <!-- Bài 6 -->
+         <div class="card">
+            <div class="card-header">
+                Tính ngày
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="">Nhập Tháng</label>
+                    <input type="number" class="form-control" id="month">
+
+                    <label for="">Nhập Năm</label>
+                    <input type="number" class="form-control" id="year">
+                </div>
+                <button onclick="tinhNgay()" class="btn btn-danger">Tính ngày</button>
+            </div>
+            <div id="tinhNgay" class="card-footer text-muted">
                 Hồ Đăng Dũng
             </div>
         </div>
@@ -118,6 +140,7 @@
     <script src="./js/bai1.js"></script>
     <script src="./js/bai3.js"></script>
     <script src="./js/bai4.js"></script>
+    <script src="./js/bai6.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

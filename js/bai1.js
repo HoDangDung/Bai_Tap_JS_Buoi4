@@ -6,44 +6,53 @@ function Sort() {
 
     // B2: Xử lý
     // Cách 1: Lồng if trong if
-    if (a > b) {
-        if (b > c) {
-            // B3: Xuất kết quả ra màn hình
-            console.log(c, b, a);
-            document.getElementById("thuTuTangDan").innerHTML = c +" < " + b + " < " + a
-        }
-        // Nếu a > b, b < c
-        if(a > c){
-            // B3: Xuất kết quả ra màn hình
-            console.log(b, c, a);
-            document.getElementById("thuTuTangDan").innerHTML = b +" < " + c + " < " + a
-        }
-        // Nếu a > b, a < c
-        else{
-            // B3: Xuất kết quả ra màn hình
-            console.log(b, a, c);
-            document.getElementById("thuTuTangDan").innerHTML = b +" < " + a + " < " + c
-        }
+    if (!a || !b || !c){
+        alert("Mời nhập giá trị")
+        return
     }
-    if (b > c) {
-        if(a > c){
-            // B3: Xuất kết quả ra màn hình
-            console.log(c, a, b);
-            document.getElementById("thuTuTangDan").innerHTML = c +" < " + a + " < " + b
-        }
-        // Nếu b > c, a < c
-        else {
-            // B3: Xuất kết quả ra màn hình
-            console.log(a, c, b);
-            document.getElementById("thuTuTangDan").innerHTML = a +" < " + c + " < " + b
-        }
-    }
-    // Nếu a < c
     else{
-        if(b > a){
-            // B3: Xuất kết quả ra màn hình
-            console.log(a, b, c);
-            document.getElementById("thuTuTangDan").innerHTML = a +" < " + b + " < " + c
+        if (a > b) {
+            if (b > c) {
+                // B3: Xuất kết quả ra màn hình
+                console.log(c, b, a);
+                document.getElementById("thuTuTangDan").innerHTML = c +" < " + b + " < " + a
+            }
+            // Nếu a > b, b < c
+            if(a > c){
+                // B3: Xuất kết quả ra màn hình
+                console.log(b, c, a);
+                document.getElementById("thuTuTangDan").innerHTML = b +" < " + c + " < " + a
+            }
+            // Nếu a > b, a < c
+            else{
+                // B3: Xuất kết quả ra màn hình
+                console.log(b, a, c);
+                document.getElementById("thuTuTangDan").innerHTML = b +" < " + a + " < " + c
+            }
         }
+        if (b > c) {
+            if(a > c){
+                // B3: Xuất kết quả ra màn hình
+                console.log(c, a, b);
+                document.getElementById("thuTuTangDan").innerHTML = c +" < " + a + " < " + b
+            }
+            // Nếu b > c, a < c
+            else {
+                // B3: Xuất kết quả ra màn hình
+                console.log(a, c, b);
+                document.getElementById("thuTuTangDan").innerHTML = a +" < " + c + " < " + b
+            }
+        }
+        // Nếu a < c
+        else{
+            if(b > a){
+                // B3: Xuất kết quả ra màn hình
+                console.log(a, b, c);
+                document.getElementById("thuTuTangDan").innerHTML = a +" < " + b + " < " + c
+            }
+        }
+    
+        document.getElementById("thuTuTangDan").className = "bg-success card-footer text-white"
     }
+    
 }
