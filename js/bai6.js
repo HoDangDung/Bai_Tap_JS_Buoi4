@@ -12,8 +12,13 @@ function tinhNgay() {
             console.log("30 ngày");
             document.getElementById("tinhNgay").innerHTML = "<p>Tháng " + month + " năm " + year + " có 30 ngày" + "</p>"
         } else if (month === 2) {
-            console.log("28 ngày");
-            document.getElementById("tinhNgay").innerHTML = "<p>Tháng " + month + " năm " + year + " có 28 ngày" + "</p>"
+            if ((year % 4 === 0 && year % 100 !== 0 && year % 400 !== 0) || (year % 100 === 0 && year % 400 === 0)) {
+                console.log("29 ngày");
+                document.getElementById("tinhNgay").innerHTML = "<p>Tháng " + month + " năm " + year + " có 29 ngày" + "</p>"
+            } else {
+                console.log("28 ngày");
+                document.getElementById("tinhNgay").innerHTML = "<p>Tháng " + month + " năm " + year + " có 28 ngày" + "</p>"
+            }
         } else {
             console.log("31 ngày");
             document.getElementById("tinhNgay").innerHTML = "<p>Tháng " + month + " năm " + year + " có 31 ngày" + "</p>"
