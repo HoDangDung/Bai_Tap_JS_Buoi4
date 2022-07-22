@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Bài tập JS buổi 4</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container py-5">
+        <!-- Bài 1 -->
+        <div class="card">
+            <div class="card-header">
+                Viết chương trình xuất 3 số theo thứ tự tăng dần
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="">Nhập số thứ nhất</label>
+                    <input type="number" class="form-control" id="firstNum">
+
+                    <label for="">Nhập số thứ hai</label>
+                    <input type="number" class="form-control" id="secondNum">
+
+                    <label for="">Nhập số thứ ba</label>
+                    <input type="number" class="form-control" id="thirdNum">
+                </div>
+                <button onclick="Sort()" class="btn btn-danger">Sort</button>
+            </div>
+            <div id="thuTuTangDan" class="card-footer text-muted">
+                Hồ Đăng Dũng
+            </div>
+        </div>
+        <!-- ============= -->
+        <br>
+        <hr><br>
+        <!-- Bài 2 -->
+        <div class="card">
+            <div class="card-header">
+                Viết chương trình "chào hỏi" các thành viên trong gia đình
+            </div>
+            <div class="card-body">
+                <div class="dropdown">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        Dropdown button
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" id="B">Bố</a>
+                        <a class="dropdown-item" i>Mẹ</a>
+                        <a class="dropdown-item">Anh trai</a>
+                        <a class="dropdown-item">Em gái</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer text-muted">
+                Footer
+            </div>
+        </div>
+        <!-- ============= -->
+        <br>
+        <hr><br>
+         <!-- Bài 3 -->
+         <div class="card">
+            <div class="card-header">
+                Viết chương trình xuất ra có bao nhiêu số lẻ và số chẵn
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="">Nhập số thứ nhất</label>
+                    <input type="number" class="form-control" id="firstNum">
+
+                    <label for="">Nhập số thứ hai</label>
+                    <input type="number" class="form-control" id="secondNum">
+
+                    <label for="">Nhập số thứ ba</label>
+                    <input type="number" class="form-control" id="thirdNum">
+                </div>
+                <button onclick="Count()" class="btn btn-danger">Count</button>
+            </div>
+            <div id="count" class="card-footer text-muted">
+                Hồ Đăng Dũng
+            </div>
+        </div>
+        <!-- ============= -->
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <script src="./js/bai1.js"></script>
+    <script src="./js/bai3.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
