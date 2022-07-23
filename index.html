@@ -112,6 +112,32 @@
         <!-- ============= -->
         <br>
         <hr><br>
+        <!-- Bài 5 -->
+        <div class="card">
+            <div class="card-header">
+                Tính ngày tháng năm
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="">Nhập Ngày</label>
+                    <input type="number" class="form-control" id="ngay">
+
+                    <label for="">Nhập Tháng</label>
+                    <input type="number" class="form-control" id="thang">
+
+                    <label for="">Nhập Năm</label>
+                    <input type="number" class="form-control" id="nam">
+                </div>
+                <button onclick="ngayHomQua()" class="btn btn-danger">Ngày hôm qua</button>
+                <button onclick="ngayMai()" class="btn btn-danger">Ngày mai</button>
+            </div>
+            <div id="ngayThangNam" class="card-footer text-muted">
+                Hồ Đăng Dũng
+            </div>
+        </div>
+        <!-- ============= -->
+        <br>
+        <hr><br>
         <!-- Bài 6 -->
         <div class="card">
             <div class="card-header">
@@ -131,6 +157,7 @@
                 Hồ Đăng Dũng
             </div>
         </div>
+        <!-- ============= -->
     </div>
 
 
@@ -139,6 +166,7 @@
     <script src="./js/bai2.js"></script>
     <script src="./js/bai3.js"></script>
     <script src="./js/bai4.js"></script>
+    <script src="./js/bai5.js"></script>
     <script src="./js/bai6.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
